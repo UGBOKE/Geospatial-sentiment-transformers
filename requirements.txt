@@ -1,0 +1,5 @@
+vaderSentiment
+transformers
+datasets
+pandas
+scikit-learn

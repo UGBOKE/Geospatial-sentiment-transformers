@@ -14,6 +14,5 @@ def get_vader_sentiment(df):
                 return 'neutral'
         return 'neutral'
     
-    df['review_sentiment_vader'] = df['cleaned_review'].apply(analyze_sentiment)
-    df['title_sentiment_vader'] = df['cleaned_title'].apply(analyze_sentiment)
+    df['text_vader'] = df['text'].apply(analyze_sentiment)
     return df
