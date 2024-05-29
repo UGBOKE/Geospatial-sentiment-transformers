@@ -19,8 +19,7 @@ if __name__ == "__main__":
     df = transformer_baseline.get_transformer_sentiment(df)
     print("Transformer Sentiment Analysis Results:")
     print(df[['text', 'transformer_sentiment']].head())
-    
+
     df.to_csv(r'C:\Users\UGBOKE GEORGE\OneDrive\Documents\TeePublic_review_with_sentiments.csv', index=False)
 
-    # Step 4: Train a Transformer Model
-    #model, results = train_model.train_model(df)
+
